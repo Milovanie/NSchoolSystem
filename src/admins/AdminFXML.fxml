@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admins.AdminController">
    <children>
       <TabPane prefHeight="720.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
@@ -79,7 +79,7 @@
                                     <Insets left="15.0" />
                                  </VBox.margin>
                               </Button>
-                              <Button layoutX="25.0" layoutY="190.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="293.0" text="Load Data">
+                              <Button layoutX="25.0" layoutY="190.0" mnemonicParsing="false" onAction="#loadStudentData" prefHeight="25.0" prefWidth="293.0" text="Load Data">
                                  <VBox.margin>
                                     <Insets left="15.0" />
                                  </VBox.margin>

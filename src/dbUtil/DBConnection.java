@@ -20,17 +20,15 @@ public class DBConnection {
 	private static final String  pathSqlite = "jdbc:sqlite:" + patha;
     
 
-    public static Connection getConnection() throws SQLException {
+    public static   Connection getConnection() throws SQLException {
         try {
             Class.forName("org.sqlite.JDBC");
             System.out.println("driver Ok ");
 //            return DriverManager.getConnection(SQURL);
             return DriverManager.getConnection(pathSqlite);
-        } catch (ClassNotFoundException e) {
+        } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        }  
         return null;
     }
 }
